@@ -6,6 +6,9 @@
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
   }
+  :root{
+    --color-primary: 34 196 199
+  }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold

@@ -19,13 +19,14 @@ const Navbar = () => {
   
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
-          src="/../public/assets/logo-ad-shadow.png"
-          alt="/"
-          width="125"
-          height="50"
+          src="/../public/assets/logoAD2023-3.png"
+          alt="logo"
+          width="140"
+          height="80"
+          className="drop-shadow-3xl"
         />
         <div>
           <ul className="hidden md:flex">
@@ -51,13 +52,14 @@ const Navbar = () => {
       </div>
 
       <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>
-        <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500" :  "fixed left-[-100%] top-0 p-10 ease-in duration-500"}>
+        <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500" :  "fixed left-[-150%] top-0 p-10 ease-in duration-500"}>
           <div className="flex w-full items-center justify-between">
             <Image
-              src="/../public/assets/logo-ad-shadow.png"
-              width="87"
-              height="50"
-              alt="/"
+              src="/../public/assets/logoAD2023-3.png"
+              width="130"
+              height="70"
+              alt="logo"
+              className="drop-shadow-3xl"
             />{" "}
             <div onClick={handleNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
               <VscChromeClose />
@@ -88,7 +90,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-[#22c4c7]">
                 Let´s connect
               </p>
             </div>
