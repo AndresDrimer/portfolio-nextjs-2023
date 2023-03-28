@@ -77,21 +77,93 @@ export default {
             },
             {
                 id:10,
+                tech:"tiendanube (CMS)",
+                icon:"/../public/assets/skills/tiendanube.png"
+            },
+            {
+                id:11,
                 tech:"figma",
                 icon:"/../public/assets/skills/figma.png"
             },
             {
-                id:11,
+                id:12,
                 tech:"photoshop",
                 icon:"/../public/assets/skills/photoshop.png"
             },
             {
-                id:12,
+                id:13,
                 tech:"premiere",
                 icon:"/../public/assets/skills/premiere.png"
             },
-         
-        ]
+        ],
+        projects:[
+            {
+                id:0,
+                imageBck:"/../public/assets/projects/bitcoin/bitcoin-img-0.png",
+                title:"Bitcoin´s observer",
+                tech:"HTML/CSS/JAVASCRIPT",
+                url:""
+            },
+            {
+                id:1,
+                imageBck:"/../public/assets/projects/calculator/calc-img-0.png",
+                title:"Simple calculator",
+                tech:"HTML/CSS/JAVASCRIPT",
+                url:""
+            },
+            {
+                id:1,
+                imageBck:"/../public/assets/projects/cdlc/cdlc-img-0.png",
+                title:"Blog & E-commerce for Urbanism Publisher",
+                tech:"CMS (Tiendanube, Wordpress) - FIGMA, Photoshop",
+                url:""
+            },
+            {
+                id:2,
+                imageBck:"/../public/assets/projects/garage/garage-img-0.png",
+                title:"Store",
+                tech:"Bootstrap",
+                url:""
+            },
+            {
+                id:3,
+                imageBck:"/../public/assets/projects/harry/harry-img-0.png",
+                title:"Harry Potter Trivia",
+                tech:"HTML/CSS/JAVASCRIPT",
+                url:""
+            },
+            {
+                id:4,
+                imageBck:"/../public/assets/projects/max/max-img-1.png",
+                title:"Website & E-commerce for artist (Max Aguirre)",
+                tech:"HTML/CSS/JAVASCRIPT - CMS (Tiendanube)",
+                url:""
+            },
+            {
+                id:5,
+                imageBck:"/../public/assets/projects/pablo/pablo-website-landscpae.png",
+                title:"Website for videomaker (Pablo coronel)",
+                tech:"REACT",
+                url:""
+            },
+            {
+                id:6,
+                imageBck:"/../public/assets/projects/ppt/ppt-img-0.png",
+                title:"Paper, Rock & Scissors game",
+                tech:"HTML/CSS/JAVASCRIPT",
+                url:""
+            },
+            {
+                id:7,
+                imageBck:"",
+                title:"Tenzies game",
+                tech:"REACT",
+                url:""
+            },
+
+            
+
+    ]
             
 
     }
