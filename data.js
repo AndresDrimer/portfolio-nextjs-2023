@@ -1,19 +1,20 @@
 export default {
   name: "Andrés Drimer",
-  workTitle: "front-end Web Developer",
+  workTitle: "Front-end Web Developer",
   moto: "I love to build and design responsive websites to connect people with people.",
   logo: "/assets/logoAD2023-4.png",
   sections: ["home", "about", "skills", "projects", "contact"],
   aboutPhoto: "/assets/portrait2.jpeg",
+  status:"I´m available for freelance or full-time positions. Contact me and let´s talk",
   contact: [
     {
-      linkedin: "",
-      github: "",
-      email: "",
-      whatsapp: "",
+      linkedin: "https://www.linkedin.com/in/andres-drimer/",
+      github: "https://github.com/AndresDrimer/",
+      email: "andresdrimer@hotmail.com",
+      whatsapp: "+549116490517",
     },
   ],
-  resume: "",
+  resume: "https://drive.google.com/file/d/1qK_kooLAZU9H1oNtKwB-rCDA7kbOhgl8/view",
   about: {
     subtitle: "Everybody´s path is unique. This is mine...",
     paragraph1:
@@ -103,7 +104,7 @@ export default {
   projects: [
     {
       id: 0,
-      imageBck: "/assets/projects/pablo/pablo-website-landscape.png",
+      imageBck: "/assets/projects/pablo/pablo-website-iphone6.png",
       title: "Website for videomaker (Pablo coronel)",
       tech: "REACT",
       url: "",

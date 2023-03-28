@@ -9,6 +9,7 @@ import Skills from '@/components/Skills'
 
 import data from '../../data'
 import Projects from '@/components/Projects'
+import Contact from '@/components/Contact'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <About data={data} />
       <Skills data={data} />
       <Projects data={data} />
+      <Contact data={data} />
     </>
   )
 }

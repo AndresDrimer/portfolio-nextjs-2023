@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { VscChromeClose, VscMenu } from "react-icons/vsc";
 import {
   AiOutlineLinkedin,
@@ -11,15 +11,26 @@ import {
 
 const Navbar = (props) => {
   const [nav, setNav] = useState(false)
+  const [shadow, setShadow] = useState(false)
 
   const handleNav = () =>{
     setNav(prev =>!prev)
     console.log(nav)
   }
   
+  useEffect(()=>{
+    const handleShadow = () =>{
+      if (window.scrollY > 90){
+        setShadow(true)
+      } else {
+        setShadow(false)
+      }
+    }
+    window.addEventListener("scroll", handleShadow)
+  }, [])
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]">
+    <div className={shadow  ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]" : "fixed w-full h-20 z-[100] bg-[#ecf0f3]"}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src={props.data.logo}
@@ -33,13 +44,13 @@ const Navbar = (props) => {
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
@@ -54,13 +65,14 @@ const Navbar = (props) => {
       <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>
         <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500" :  "fixed left-[-150%] top-0 p-10 ease-in duration-500"}>
           <div className="flex w-full items-center justify-between">
-            <Image
+          <Link href="/">
+          <Image
               src={props.data.logo}
               width="130"
               height="70"
               alt="logo"
               className="drop-shadow-3xl"
-            />{" "}
+            /></Link>
             <div onClick={handleNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
               <VscChromeClose />
             </div>
@@ -74,19 +86,19 @@ const Navbar = (props) => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+                <li onClick={()=>setNav(false)} className="py-4 text-sm">Home</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">About</li>
+              <Link href="/#about">
+                <li onClick={()=>setNav(false)} className="py-4 text-sm">About</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
+              <Link href="/#skills">
+                <li onClick={()=> handleNav} className="py-4 text-sm">Skills</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Projects</li>
+              <Link href="/#projects">
+                <li onClick={()=>setNav(false)} className="py-4 text-sm">Projects</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Contact</li>
+              <Link href="/#contact">
+                <li onClick={()=>setNav(false)} className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
             <div className="pt-40">
