@@ -9,7 +9,7 @@ import {
   AiOutlineWhatsApp
 } from "react-icons/ai";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [nav, setNav] = useState(false)
 
   const handleNav = () =>{
@@ -22,7 +22,7 @@ const Navbar = () => {
     <div className="fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
-          src="/assets/logoAD2023-4.png"
+          src={props.data.logo}
           alt="logo"
           width="140"
           height="80"
@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500" :  "fixed left-[-150%] top-0 p-10 ease-in duration-500"}>
           <div className="flex w-full items-center justify-between">
             <Image
-              src="/../public/assets/logoAD2023-4.png"
+              src={props.data.logo}
               width="130"
               height="70"
               alt="logo"

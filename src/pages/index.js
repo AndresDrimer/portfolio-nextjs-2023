@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/logoAD2023-4.ico" />
       </Head>
   
-      <Navbar />
+      <Navbar data={data}/>
       <Main data={data} />
       <About data={data} />
       <Skills data={data} />
