@@ -5,7 +5,12 @@
 html{
   scroll-behavior: smooth;
 }
-
+#contact, #projects{
+  scroll-margin-top: 40px;
+}
+#skills{
+  scroll-margin-top: 100px;
+}
 @layer base{
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide

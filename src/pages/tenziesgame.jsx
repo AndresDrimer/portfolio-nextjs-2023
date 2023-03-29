@@ -38,7 +38,7 @@ export default function tenziesgame() {
         
           <p className="uppercase text-xl tracking-widest text-[#22c4c7]">Project</p>
           <h2 className="py-4">Overview</h2>
-          <p>{data.projects[1].description}</p>
+          <p className="pr-4">{data.projects[1].description}</p>
           <button className="px-8 py-2 mt-4 mr-8"><a href={data.projects[1].externalUrl} target="_blank">Demo</a></button>
           <button className="px-8 py-2 mt-4 "><a href={data.projects[1].gitHubUrl} target="_blank">Code</a></button>
         </div>
