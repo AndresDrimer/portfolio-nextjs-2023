@@ -7,14 +7,13 @@ export default {
   aboutPhoto: "/assets/portrait2.jpeg",
   status:
     "I´m available for freelance or full-time positions. Contact me and let´s talk",
-  contact: [
+  contact: 
     {
       linkedin: "https://www.linkedin.com/in/andres-drimer/",
       github: "https://github.com/AndresDrimer/",
       email: "andresdrimer@hotmail.com",
       whatsapp: "+549116490517",
     },
-  ],
   resume:
     "https://drive.google.com/file/d/1qK_kooLAZU9H1oNtKwB-rCDA7kbOhgl8/view",
   about: {
