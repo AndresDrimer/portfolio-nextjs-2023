@@ -5,7 +5,7 @@
 html{
   scroll-behavior: smooth;
 }
-#contact, #projects{
+#contact, #projects, #about{
   scroll-margin-top: 40px;
 }
 #skills{
