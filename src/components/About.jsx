@@ -12,6 +12,7 @@ const About = (props) => {
           <p className="py-2 text-gray-600">// {props.data.about.subtitle}</p>
           <p className="py-2 text-gray-600">{props.data.about.paragraph1} </p>
           <p className="py-2 text-gray-600">{props.data.about.paragraph2}</p>
+          <p className="py-2 text-gray-600">{props.data.about.paragraph3}</p>
           <p className="py-2 text-gray-600 underline cursor-pointer">Check out my latest projects</p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">

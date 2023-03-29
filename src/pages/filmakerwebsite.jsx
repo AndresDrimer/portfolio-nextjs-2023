@@ -23,7 +23,7 @@ export default function filmakerwebsite() {
           <h3>{data.projects[0].tech}</h3>
         </div>
       </div>
-      <div className="w-screen h-full max-width-[1240px]">
+      <div className="w-screen h-full max-width-[1240px] flex justify-center">
       <Image
         src={data.projects[0].imageInside}
         alt="/"
@@ -36,17 +36,9 @@ export default function filmakerwebsite() {
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
         
-          <p>Project</p>
-          <h2>Overview</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <p className="uppercase text-xl tracking-widest text-[#22c4c7]">Project</p>
+          <h2 className="py-4">Overview</h2>
+          <p>{data.projects[0].description}</p>
           <button className="px-8 py-2 mt-4 mr-8"><a href={data.projects[0].externalUrl} target="_blank">Demo</a></button>
           <button className="px-8 py-2 mt-4 "><a href={data.projects[0].gitHubUrl} target="_blank">Code</a></button>
         </div>

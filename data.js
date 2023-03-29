@@ -5,7 +5,8 @@ export default {
   logo: "/assets/logoAD2023-4.png",
   sections: ["home", "about", "skills", "projects", "contact"],
   aboutPhoto: "/assets/portrait2.jpeg",
-  status:"I´m available for freelance or full-time positions. Contact me and let´s talk",
+  status:
+    "I´m available for freelance or full-time positions. Contact me and let´s talk",
   contact: [
     {
       linkedin: "https://www.linkedin.com/in/andres-drimer/",
@@ -14,13 +15,16 @@ export default {
       whatsapp: "+549116490517",
     },
   ],
-  resume: "https://drive.google.com/file/d/1qK_kooLAZU9H1oNtKwB-rCDA7kbOhgl8/view",
+  resume:
+    "https://drive.google.com/file/d/1qK_kooLAZU9H1oNtKwB-rCDA7kbOhgl8/view",
   about: {
     subtitle: "Everybody´s path is unique. This is mine...",
     paragraph1:
-      "I started to work in Cafe de las Ciudades, a book publisher specialized in Urbanism, in 2019. I was in charge of comercialization, a role which included dealing with clients, suppliers and book shops. I suggested to open an ecommerce site, which I created with a CMS (TiendaNube). I also ran a strong ad-campaign in social media. They were thrilled to see the result (and their facturation growing up to 7 times!), so then I was in charge of re-designing the website for their monthly newsletter, in its 20th anniversary. I managed to do that with another CMS (Wordpress). I got more and more deeply involved in programing websites and suddenly I realized I that had encountered my new passion. I´ve got really focused on learning everything about web developing while working in a lot of different projects for people around (and later for unkowned clients in Feverr). The word kept running mouth to mouth and I ended building and designing a lot of projects to reach different expectations. Now I have a strong desire to be involved in a group of people to participate in building bigger things, keep the level of complexity going up to continue learning and growing as developer. ",
+      "I started working at Cafe de las Ciudades, a book publisher specialized in Urbanism, in 2019. I was in charge of comercialization, a role which included dealing with customers, suppliers and book shops. I suggested opening an ecommerce site, which I created with a CMS (TiendaNube). I also ran a strong ad-campaign on social media. They were thrilled to see the results (and their invoicing grew sevenfold!), so then I was in charge of re-designing the website for their monthly newsletter, on its 20th anniversary. I managed to do that with another CMS (Wordpress). I got more and more deeply involved in programing websites and suddenly I realized that I had encountered my new passion. ",
     paragraph2:
-      "I think I can add a really good base on soft skills, I´m used to work with people from different cultures and can comunicate clearly in English, Spanish and Portuguese. I´ve work in the music industry previously, in the production field, so I´m used to deal with deadlines, group leadership and tricky commercial affaires. ",
+      "I got really focused on learning everything about web developing while working on a lot of different projects for people around (and later for unkowned clients in Feverr). The word kept running mouth to mouth and I ended up building and designing a lot of projects to reach different expectations. Now I have a strong desire to be involved in a group of people to participate in building bigger things, keep the level of complexity going up and to continue learning and growing as a developer.",
+    paragraph3:
+      "I think I can add a really good base on soft skills, I´m used to working with people from different cultures and can communicate clearly in English, Spanish and Portuguese. I´ve worked in the music industry, in the production field, so I´m used to dealing with deadlines, group leadership and tricky commercial affaires.",
   },
   skills: [
     {
@@ -105,14 +109,15 @@ export default {
     {
       id: 0,
       imageBck: "/assets/projects/pablo/pablo1.png",
-      imageInside:"/assets/projects/pablo/pablo2.png",
+      imageInside: "/assets/projects/pablo/pablo2.png",
       title: "Filmaker website",
       tech: "REACT",
-      techDetail:["React","Javascript", "CSS", "HTML"],
+      techDetail: ["React", "React-router", "Javascript", "CSS", "HTML"],
       anchor: "filmakerwebsite",
-      externalUrl:"https://darling-manatee-463a01.netlify.app/",
-      gitHubUrl:"https://github.com/AndresDrimer/pablocoronel-react"
-
+      externalUrl: "https://darling-manatee-463a01.netlify.app/",
+      gitHubUrl: "https://github.com/AndresDrimer/pablocoronel-react",
+      description:
+        "This was a really fun project to build. I decided to use a video background as main object because it´s a website about a video maker. It includes two different layouts, one for main section and the other one for showing artist´s works and projects, I choosed react-router to manage them. I focused on re-usability of components, making it really easy to update.",
     },
     {
       id: 1,
@@ -120,7 +125,7 @@ export default {
       title: "Tenzies game",
       tech: "REACT",
       anchor: "tenziesgame",
-      externalUrl: "https://tenziesgameforcataandpabli.netlify.app/",     
+      externalUrl: "https://tenziesgameforcataandpabli.netlify.app/",
     },
     {
       id: 2,

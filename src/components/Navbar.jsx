@@ -32,13 +32,14 @@ const Navbar = (props) => {
   return (
     <div className={shadow  ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]" : "fixed w-full h-20 z-[100] bg-[#ecf0f3]"}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <Link href="/">
         <Image
           src={props.data.logo}
           alt="logo"
           width="140"
           height="80"
           className="drop-shadow-3xl"
-        />
+        /></Link>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -50,6 +51,9 @@ const Navbar = (props) => {
             <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
+            <Link href="/#projects">
+            <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
+          </Link>
             <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
