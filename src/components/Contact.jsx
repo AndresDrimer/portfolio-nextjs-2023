@@ -12,12 +12,12 @@ export default function Contact(props) {
         </p>
         <h2 className="py-4">Get in touch</h2>
         <div className="grid lg:grid-col-5 gap-8">
-          {/*lef*/}
+          {/*left*/}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full rounded-xl">
               <div>
                 <img
-                  className="rounded-xl hover:scale-105 ease-in duration-300"
+                  className="rounded-3xl hover:scale-105 ease-in duration-300 p-4"
                   src="/assets/contact.jpg"
                   alt="contact pic"
                 />
