@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 //components
-import Navbar from '@/components/Navbar'
+
 import Main from '@/components/Main'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/logoAD2023-4.ico" />
       </Head>
   
-      <Navbar data={data}/>
+     
       <Main data={data} />
       <About data={data} />
       <Skills data={data} />

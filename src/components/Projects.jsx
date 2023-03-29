@@ -2,7 +2,7 @@ import ProjectItem from "./ProjectItem";
 
 export default function Projects(props) {
   const createProjectItem = props.data.projects.map(it=>{
-    return (<ProjectItem imageBck={it.imageBck} title={it.title} tech={it.tech} key={it.id} />)
+    return (<ProjectItem imageBck={it.imageBck} title={it.title} tech={it.tech} key={it.id} anchor={it.anchor}/>)
   })
   
     return (
