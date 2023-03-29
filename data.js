@@ -112,12 +112,12 @@ export default {
       imageInside: "/assets/projects/pablo/pablo2.png",
       title: "Filmaker website",
       tech: "REACT",
-      techDetail: ["React", "React-router", "Javascript", "CSS", "HTML"],
+      techDetail: ["React", "React-router", "EmailJS", "Javascript", "CSS", "HTML"],
       anchor: "filmakerwebsite",
       externalUrl: "https://darling-manatee-463a01.netlify.app/",
       gitHubUrl: "https://github.com/AndresDrimer/pablocoronel-react",
       description:
-        "This was a really fun project to build. I decided to use a video background as main object because it´s a website about a video maker. It includes two different layouts, one for main section and the other one for showing artist´s works and projects, I choosed react-router to manage them. I focused on re-usability of components, making it really easy to update.",
+        "This was a really fun project to build. I decided to use a video background as main object because it´s a website about a video maker. It includes two different layouts, one for main section and the other one for showing artist´s works and projects, I choosed react-router to manage them. I focused on re-usability of components, making it really easy to update. I used EmailJS to resolve sendings from Contact section",
     },
     {
       id: 1,

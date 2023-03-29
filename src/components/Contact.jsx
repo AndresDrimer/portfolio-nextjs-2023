@@ -2,8 +2,56 @@ import ContactIcons from "./ContactIcons";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi"
 
 import Link from "next/link";
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 export default function Contact(props) {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [mailSendedMessage, setMailSendedMessage] = useState("")
+  
+    const form = useRef();
+
+    
+    function handleSubmit(e){
+      e.preventDefault();
+      emailjs.sendForm('service_q5vhhxh', 'template_x0doc9n', form.current, '6fqjtlkE6QrFFSTzt')
+        .then((result) => {
+            console.log(result.text);
+            setFormData({
+              fullName: "",
+              phone:"",
+              email: "",
+              subject: "",
+              message: "",
+            });
+          setMailSendedMessage(">> Your message has been sended OK")
+        }, (error) => {
+            console.log(error.text);
+            const errorMsg = document.getElementById("msg")
+            errorMsg.style.color="red"
+            setMailSendedMessage(">> Sorry, your message hasn´t been sended correctly. Please consider writing directly to andresdrimer@hotmail.com")
+
+        });
+    };
+  
+
+    function handleChange(event) {
+      setFormData(prev => {
+       return {
+           ...prev,
+           [event.target.name]: event.target.value
+       }
+      })
+       
+     }
+
   return (
     <div  id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1024px] m-auto px-2 py-16 w-full">
@@ -37,13 +85,18 @@ export default function Contact(props) {
         {/*right*/}
         <div className="cols-span-3 w-full h-auto shadow-gray-400 rounded-xl lg:p-4">
           <div className="p-4">
-            <form>
+            <form ref={form} onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Name </label>
                   <input
                     type="text"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    name="fullName"
+          placeholder="Full Name"
+          value={formData.fullName}
+          onChange={handleChange}
+          required
                   />
                 </div>
 
@@ -54,6 +107,10 @@ export default function Contact(props) {
                   <input
                     type="text"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    name="phone"
+          placeholder="Phone number"
+          value={formData.phone}
+          onChange={handleChange}
                   />
                 </div>
               </div>
@@ -62,6 +119,11 @@ export default function Contact(props) {
                 <input
                   type="email"
                   className="border-2 rounded-lg p-3 flex border-gray-300"
+                  name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
                 />
               </div>
 
@@ -70,6 +132,10 @@ export default function Contact(props) {
                 <input
                   type="text"
                   className="border-2 rounded-lg p-3 flex border-gray-300"
+                  name="subject"
+          placeholder="Subject"
+          value={formData.subject}
+          onChange={handleChange}
                 />
               </div>
 
@@ -78,6 +144,11 @@ export default function Contact(props) {
                 <textarea
                   className="border-2 rounded-lg p-3 border-gray-300"
                   rows="10"
+                  name="message"
+          placeholder="Message"
+          value={formData.message}
+          onChange={handleChange}
+          required
                 />
               </div>
               <button className="w-full p-4 text-gray-100 mt-4">
@@ -86,6 +157,7 @@ export default function Contact(props) {
             </form>
           </div>
         </div>
+        <div className="text-[#22c4c7] tracking-widest text-center" id="msg">{mailSendedMessage}</div>
       </div>
 
       <div className="flex justify-center py-12">
