@@ -110,21 +110,22 @@ const Navbar = (props) => {
                 Let´s connect
               </p>
             </div>
-            <div className="flex items-center justify-between w-full my-4 sm:w-[80%]">
+            <div className="flex items-center justify-between w-full my-4 sm:w-[80%]"><a href={props.data.contact.linkedin} target="_blank">
               <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                 <AiOutlineLinkedin />
-              </div>
+              </div></a> <a href="mailto:andresdrimer@hotmail.com?subject=Hello Andres!" target="_blank">
               <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                 <AiOutlineMail />
-              </div>
+              </div></a>
+              <a href={props.data.contact.github} target="_blank">
               <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                 {" "}
                 <AiOutlineGithub />
-              </div>
+              </div></a>  <a href="https://api.whatsapp.com/send?phone=5491164930517" target="_blank">
               <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                 {" "}
                 <AiOutlineWhatsApp />
-              </div>
+              </div></a>
 
             
             </div>
