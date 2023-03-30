@@ -9,6 +9,8 @@ import {
   AiOutlineWhatsApp
 } from "react-icons/ai";
 
+
+
 const Navbar = (props) => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
@@ -59,6 +61,12 @@ const Navbar = (props) => {
                 Contact
               </li>
             </Link>
+            <Link href={props.data.resume} target="_blank">
+              <li className="ml-10 text-sm uppercase text-[#22c4c7] hover:border-b">
+                Resume
+              </li>
+            </Link>
+
           </ul>
           <div onClick={handleNav} className="md:hidden">
             <VscMenu size={25} />
@@ -104,6 +112,11 @@ const Navbar = (props) => {
               <Link href="/#contact">
                 <li onClick={()=>setNav(false)} className="py-4 text-sm">Contact</li>
               </Link>
+              <Link href={props.data.resume} target="_blank">
+              <li onClick={()=>setNav(false)} className="py-4 text-sm text-[#22c4c7]">
+                Resume
+              </li>
+            </Link>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#22c4c7]">
