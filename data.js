@@ -7,7 +7,7 @@ export default {
   sections: ["home", "about", "skills", "projects", "contact"],
   aboutPhoto: "/assets/portrait2.jpeg",
   status:
-    "I´m available for freelance or full-time positions. Contact me and let´s talk",
+    "I´m available for freelance or full-time positions. Contact me and we´ll talk",
   contact: 
     {
       linkedin: "https://www.linkedin.com/in/andres-drimer/",
@@ -114,10 +114,10 @@ export default {
       tech: "REACT",
       techDetail: ["React", "React-router", "EmailJS", "Javascript", "CSS", "HTML"],
       anchor: "filmakerwebsite",
-      externalUrl: "https://darling-manatee-463a01.netlify.app/",
+      externalUrl: "https://monumental-moxie-6383d3.netlify.app",
       gitHubUrl: "https://github.com/AndresDrimer/pablocoronel-react",
       description:
-        "This was a really fun project to build. I decided to use a video background as main object because it´s a website about a video maker. It includes two different layouts, one for main section and the other one for showing artist´s works and projects, I choosed react-router to manage them. I focused on re-usability of components, making it really easy to update. I used EmailJS to resolve sendings from Contact section",
+        "This was a really fun project to build. I decided to use a video background as the main object because it´s a website for a video maker. It includes two different layouts, one for the main section and the other one to show artist´s works and projects, I chosed react-router to manage them and created dynamic routes for portfolio items. I focused on the re-usability of components, making it really easy to update. I used EmailJS to manage sendings from Contact section",
     },
     {
       id: 1,
@@ -130,7 +130,7 @@ export default {
       externalUrl: "https://tenziesgameforcataandpabli.netlify.app/",
       gitHubUrl: "https://github.com/AndresDrimer/tenzies",
       description:
-        "Classic tenzies game. It provides language selection toggling from English to Spanish. I think it´s funny to play and I love Confetti´s winning effect :)",
+        "Classic tenzies game. It provides language selection toggling from English to Spanish. I think it´s fun to play and I love Confetti´s animation :)",
     },
     {
       id: 2,
@@ -143,7 +143,7 @@ export default {
       externalUrl: "https://maxaguirre.com.ar/",
       gitHubUrl: "https://github.com/AndresDrimer/tenzies",
       description:
-        "Personal website for artist Max Aguirre. Written in vanilla style. It has a beautifull artwork by the artist. It´s integrated with anothe site I build for same client, a CMS e-commerce (TiendaNube). My goal was to have a neat continuation between both sites and to capture artist´s own style.",
+        "Personal website for artist Max Aguirre. Written in vanilla style. It has beautiful artwork by the artist. It´s integrated with another site I built for the same client, a CMS e-commerce (TiendaNube). My goal was to have a neat continuity between both sites and to capture the artist´s own style.",
     },
     {
       id: 3,
@@ -156,7 +156,7 @@ export default {
       externalUrl: "https://cafedelasciudades.com.ar/",
       gitHubUrl: "https://cafedelasciudades.mitienda.com",
       description:
-        "It was a quite a beautifull challenge designing for Cafe de las Ciudades. I started with their CMS e-commerce site and then I jumped into re-designing their digital maganize on their 20th anniversary. They have a really strong community so it´s was important to maintain previous line aswell as injecting new features and a modern design. I´ve received the most beautifull feedback from long time users so I´m quite happy with the result.",
+        "It was quite a beautiful challenge designing for Cafe de las Ciudades. I started with their CMS e-commerce site and then I jumped into re-designing their digital maganize on their 20th anniversary. They have a really strong community so it was important to maintain the previous line as well as injecting new features and a modern design. I received the most wonderful feedback from long time users so I´m quite happy with the results.",
     },
   ],
 };
